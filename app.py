@@ -7,4 +7,7 @@ def parallel(resistors):
   print(p)
 
 
-parallel([1000, 500, 3000])
+def potential_divider(v, resistors):
+  for r in resistors:
+    vr = (v * r)/sum(resistors)
+    print(str(vr) + "v")
